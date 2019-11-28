@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 引入vue-awesome-swiper相关模块
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 // 引入reset.css文件，保证所有不同类别的手机浏览器显示的页面是一致的，没有差别
 import 'styles/reset.css'
 // 解决：移动端的 1像素边框 问题 -- 引入border.css文件
@@ -15,6 +18,8 @@ import 'styles/iconfont.css'
 Vue.config.productionTip = false
 // 使用fastClick
 fastClick.attach(document.body)
+// 使用vue-awesome-swiper
+Vue.use(VueAwesomeSwiper /* { default global options } */)
 
 /* eslint-disable no-new */
 new Vue({
