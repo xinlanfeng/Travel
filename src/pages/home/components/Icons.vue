@@ -126,6 +126,10 @@ export default {
   bottom: 4px;
 }
 
+.icons {
+  margin-top: 0.2rem;
+}
+
 .icon {
   position: relative;
   float: left;
