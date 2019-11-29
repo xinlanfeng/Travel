@@ -1,6 +1,9 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
+    <!-- v-if="swiperList.length" 解决默认显示轮播图最后一张的问题（该问题是因为未获取json数据时swiperList是一个空数组引起的）-->
+    <!-- <swiper :options="swiperOption" v-if="swiperList.length"> -->
+    <!-- 但最好不要在模板中出先计算length等逻辑性语句，所以改用计算属性computed完成 -->
+    <swiper :options="swiperOption" v-if="showSwiper">
       <!-- slides -->
       <swiper-slide v-for="item of swiperList" :key="item.id">
         <img :src="item.imgUrl" class="swiper-img" alt="去哪儿门票" />
@@ -14,6 +17,9 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    swiperList: Array
+  },
   data () {
     return {
       swiperOption: {
@@ -24,29 +30,12 @@ export default {
         pagination: '.swiper-pagination',
         // 让图片可以轮播
         loop: true
-      },
-      swiperList: [
-        {
-          id: '0001',
-          imgUrl:
-            'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/a26b3b23c19843d8d8ab924c79b2c98a.jpg_750x200_f6286afb.jpg'
-        },
-        {
-          id: '0002',
-          imgUrl:
-            'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/0885dc58d87b07dff553140a1dd26a36.jpg_750x200_d7105b0b.jpg'
-        },
-        {
-          id: '0003',
-          imgUrl:
-            'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201910/e7eac5a5e99e6517c61b953c0fece63b.jpg_750x200_4b701cf8.jpg'
-        },
-        {
-          id: '0004',
-          imgUrl:
-            'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/14c86b17f55e4b639776b497178f8ef7.jpg_750x200_0d6b121a.jpg'
-        }
-      ]
+      }
+    }
+  },
+  computed: {
+    showSwiper () {
+      return this.swiperList.length
     }
   }
 }

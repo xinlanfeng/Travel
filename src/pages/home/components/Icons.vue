@@ -17,77 +17,19 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array
+  },
   data () {
     return {
       swiperOption: {
         autoplay: false,
         pagination: '.swiper-pagination'
-      },
-      iconList: [
-        {
-          id: '0001',
-          imgUrl:
-            'https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-          desc: '景点门票'
-        },
-        {
-          id: '0002',
-          imgUrl:
-            'https://imgs.qunarzz.com/piao/fusion/1803/97/02f5043b51b2102.png',
-          desc: '情迷九寨'
-        },
-        {
-          id: '0003',
-          imgUrl:
-            'https://imgs.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
-          desc: '故宫'
-        },
-        {
-          id: '0004',
-          imgUrl:
-            'https://imgs.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-          desc: '一日游'
-        },
-        {
-          id: '0005',
-          imgUrl:
-            'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/338c5b924c5809e8c7b14f60a953c3e2.png',
-          desc: '欢乐谷'
-        },
-        {
-          id: '0006',
-          imgUrl:
-            'https://imgs.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-          desc: '泡温泉'
-        },
-        {
-          id: '0007',
-          imgUrl:
-            'https://imgs.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png',
-          desc: '野生动物园'
-        },
-        {
-          id: '0008',
-          imgUrl:
-            'https://imgs.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-          desc: '芙蓉园'
-        },
-        {
-          id: '0009',
-          imgUrl:
-            'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20192/b34a13fd372f5ce8cb2c954ffe25622d.png',
-          desc: '马上游'
-        },
-        {
-          id: '0010',
-          imgUrl:
-            'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/f04285731d7121da1b9028e2bf431695.png',
-          desc: '都江堰'
-        }
-      ]
+      }
     }
   },
   computed: {
+    // 实现多页icons轮播翻页效果
     pages () {
       const pages = []
       this.iconList.forEach((item, index) => {
