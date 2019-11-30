@@ -17,7 +17,8 @@
           </div>
         </div>
       </div>
-      <div class="area" v-for="(item,key) of cities" :key="key">
+      <!-- 添加:ref="key"，以实现点击字母跳转到对应的城市 -->
+      <div class="area" v-for="(item,key) of cities" :key="key" :ref="key">
         <div class="title border-topbottom">{{key}}</div>
         <div class="item-list">
           <div class="item border-bottom" v-for="city of item" :key="city.id">{{city.name}}</div>
@@ -33,10 +34,31 @@ export default {
   name: 'CityList',
   props: {
     cities: Object,
-    hotCities: Array
+    hotCities: Array,
+    letter: String
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
+
+    // 非父子组件传值方式一: 使用bus
+    // this.bus.$on('change', letter => {
+    //   if (letter) {
+    //     const element = this.$refs[letter][0]
+    //     // better-scroll提供的接口 -- 让页面滚动到元素所在位置
+    //     this.scroll.scrollToElement(element)
+    //   }
+    // })
+  },
+  // 通过watch监视letter的变化
+  watch: {
+    // 非父子组件传值方式二：通过一个中间组件 -- Alphabet组件传值给City组件，再通过City组件传值给List组件
+    letter () {
+      if (this.letter) {
+        const element = this.$refs[this.letter][0]
+        // better-scroll提供的接口 -- 让页面滚动到元素所在位置
+        this.scroll.scrollToElement(element)
+      }
+    }
   }
 }
 </script>
