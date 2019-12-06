@@ -5,14 +5,19 @@
         <div class="title border-topbottom">您的位置</div>
         <div class="button-list">
           <div class="button-wrapper">
-            <div class="button local">成都</div>
+            <div class="button local">{{this.$store.state.city}}</div>
           </div>
         </div>
       </div>
       <div class="area">
         <div class="title border-topbottom">热门城市</div>
         <div class="button-list">
-          <div class="button-wrapper" v-for="hotCity of hotCities" :key="hotCity.id">
+          <div
+            class="button-wrapper"
+            v-for="hotCity of hotCities"
+            :key="hotCity.id"
+            @click="handleCityClick(hotCity.name)"
+          >
             <div class="button">{{hotCity.name}}</div>
           </div>
         </div>
@@ -21,7 +26,12 @@
       <div class="area" v-for="(item,key) of cities" :key="key" :ref="key">
         <div class="title border-topbottom">{{key}}</div>
         <div class="item-list">
-          <div class="item border-bottom" v-for="city of item" :key="city.id">{{city.name}}</div>
+          <div
+            class="item border-bottom"
+            v-for="city of item"
+            :key="city.id"
+            @click="handleCityClick(city.name)"
+          >{{city.name}}</div>
         </div>
       </div>
     </div>
@@ -36,6 +46,15 @@ export default {
     cities: Object,
     hotCities: Array,
     letter: String
+  },
+  methods: {
+    handleCityClick (city) {
+      // vuex -- 组件中使用dispatch(事件名，参数)方法派发action
+      // this.$store.dispatch('changeCity', city)
+
+      // 不通过action调用
+      this.$store.commit('changeCity', city)
+    }
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
