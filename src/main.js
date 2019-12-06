@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 引入Vuex
+import store from './store/index'
 // 引入vue-awesome-swiper相关模块
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
@@ -26,6 +28,8 @@ new Vue({
   el: '#app',
   // es6的对象{}中，如果键和值一样，则可简写为 单个名称 的形式。例如： {a:a} 可简写为 {a}
   router,
+  // 引入store -- vuex
+  store,
   components: {
     App
   },
