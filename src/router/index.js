@@ -21,5 +21,13 @@ export default new Router({
     path: '/detail/:id',
     name: 'Detail',
     component: Detail
-  }]
+  }],
+  // 解决：进行页面滚动时，不同页面之间会相互影响（上一页面的滚动结果持续到下一页面）的问题
+  scrollBehavior (to, from, savedPosition) {
+    // 使页面进行切换后，始终回到最顶部
+    return {
+      x: 0,
+      y: 0
+    }
+  }
 })
