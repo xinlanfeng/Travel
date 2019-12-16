@@ -16,6 +16,7 @@ import 'styles/border.css'
 import fastClick from 'fastclick'
 // 引入iconfont.css文件 -- 因为各个页面都需要引入iconfont，所以直接在main.js中引入
 import 'styles/iconfont.css'
+import 'babel-polyfill'
 
 Vue.config.productionTip = false
 // 使用fastClick

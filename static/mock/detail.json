@@ -1,0 +1,28 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "国色天香，陆地乐园",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1704/a5/a59677101e07d38a3.img.jpg_600x330_5aa6e477.jpg",
+    "gallaryImgs": [
+      "http://img1.qunarzz.com/sight/p0/1704/a5/a59677101e07d38a3.img.jpg_r_800x800_d6a9ed62.jpg",
+      "http://img1.qunarzz.com/sight/p0/1801/41/418630d0998c5bcaa3.img.jpg_r_800x800_3625e06a.jpg"
+    ],
+    "categoryList": [{
+      "title": "成人票",
+      "children": [{
+        "title": "成人票（含30项游乐项目）",
+        "children": [{
+          "title": "成人票 - xx连锁店销售"
+        }]
+      }, {
+        "title": "成人票（含30项游乐项目）+ 2小时生效"
+      }]
+    }, {
+      "title": "学生票"
+    }, {
+      "title": "儿童票"
+    }, {
+      "title": "特惠票"
+    }]
+  }
+}

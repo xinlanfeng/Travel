@@ -6,10 +6,12 @@
       v-for="item of letters"
       :key="item"
       @click="handleLetterClick"
-      @touchstart="handleTouchStart"
+      @touchstart.prevent="handleTouchStart"
       @touchmove="handleTouchMove"
       @touchend="handleTouchEnd"
-    >{{item}}</li>
+    >
+      {{ item }}
+    </li>
   </ul>
 </template>
 

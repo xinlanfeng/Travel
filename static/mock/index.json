@@ -1,0 +1,135 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+        "id": "0001",
+        "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/a26b3b23c19843d8d8ab924c79b2c98a.jpg_750x200_f6286afb.jpg"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/0885dc58d87b07dff553140a1dd26a36.jpg_750x200_d7105b0b.jpg"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201910/e7eac5a5e99e6517c61b953c0fece63b.jpg_750x200_4b701cf8.jpg"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/14c86b17f55e4b639776b497178f8ef7.jpg_750x200_0d6b121a.jpg"
+      }
+    ],
+    "iconList": [{
+        "id": "0001",
+        "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/97/02f5043b51b2102.png",
+        "desc": "情迷九寨"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png",
+        "desc": "故宫"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "desc": "一日游"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/338c5b924c5809e8c7b14f60a953c3e2.png",
+        "desc": "欢乐谷"
+      },
+      {
+        "id": "0006",
+        "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+        "desc": "泡温泉"
+      },
+      {
+        "id": "0007",
+        "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+        "desc": "野生动物园"
+      },
+      {
+        "id": "0008",
+        "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+        "desc": "芙蓉园"
+      },
+      {
+        "id": "0009",
+        "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20192/b34a13fd372f5ce8cb2c954ffe25622d.png",
+        "desc": "马上游"
+      },
+      {
+        "id": "0010",
+        "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/f04285731d7121da1b9028e2bf431695.png",
+        "desc": "都江堰"
+      }
+    ],
+    "recommendList": [{
+        "id": "0001",
+        "imgUrl": "https://imgs.qunarzz.com/sight/p0/1704/a5/a59677101e07d38a3.img.jpg_200x200_6064e939.jpg",
+        "title": "国色天乡·陆地乐园",
+        "desc": "放下手机，抛开工作，尽情享受这个夏天赋予我们的火热，以及天乡带给我们的清凉！"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://imgs.qunarzz.com/sight/p0/1509/1d/e74e796e4e21275427ffdd838619f45f.water.jpg_200x200_d994e778.jpg",
+        "title": "成都欢乐谷",
+        "desc": "童年啊，是梦中的真，是真中的梦，是回忆时爸爸坚实的臂膀，妈妈温暖的脸庞"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg",
+        "title": "成都海昌极地海洋公园",
+        "desc": "以南北极动物科普、展示、互动、表演为主，涵盖休闲、度假、亲子互娱等多种领域的极地海洋主题公园，也是中国西南地区一个综合的专业性主题海洋公园"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "https://imgs.qunarzz.com/sight/p0/1508/53/53c486532f848d71.img.jpg_200x200_c4be246c.jpg",
+        "title": "西岭雪山",
+        "desc": "西岭雪山从山脚下爬到日月坪大概要一天时间，这是在你身体条件不错的情况下，一天之内海拔高度上升2000多米，对普通人来说有点够呛"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "https://imgs.qunarzz.com/sight/p0/1505/b0/b0132e78efa00572.water.jpg_200x200_3f499a59.jpg",
+        "title": "青城山",
+        "desc": "宫内有老君殿、三清殿、文武殿和道德经堂，香火旺盛，大多数游人至此都会烧香祈福"
+      }
+    ],
+    "weekendList": [{
+        "id": "0001",
+        "imgUrl": "https://imgs.qunarzz.com/sight/source/1505/98/47e8d7bdbed162.jpg_r_640x214_f6059302.jpg",
+        "title": "有温泉就是任性",
+        "desc": "繁忙的一周结束，拖着疲惫的身体赶紧来泡个养生温泉吧，解除你的疲劳"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg",
+        "title": "成都必打卡",
+        "desc": "成都的标志，也是现代人对老成都的记忆"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://imgs.qunarzz.com/sight/source/1507/a0/7087c85d439e4.jpg_r_640x214_4cd56a30.jpg",
+        "title": "摩崖石刻造像",
+        "desc": "诸事不顺，来抱佛脚，中国最壮观的大佛大盘点~来一场真正的“佛”系之旅，乐山大佛是首选"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "https://imgs.qunarzz.com/sight/source/1509/ff/4184c6c13edbb.jpg_r_640x214_60474b61.jpg",
+        "title": "成都周边秋色",
+        "desc": "细数成都周边秋天最美仙境"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "https://imgs.qunarzz.com/sight/source/1507/a0/7087c85d439e4.jpg_r_640x214_4cd56a30.jpg",
+        "title": "远离烧烤模式",
+        "desc": "与冰川里的水晶宫、“摄影家走廊”、来一场亲密的约会，艰辛会有的，可这都是值得的"
+      }
+    ]
+  }
+}
